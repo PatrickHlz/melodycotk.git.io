@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	  <title>MELODYCOTK</title>
+	  
+  <script>
+    function afficherTexte() {
+
+      var zoneTexte = document.getElementById("zoneTexte");
+
+      if (zoneTexte.style.display === "block") {
+        zoneTexte.style.display = "none";
+      } else {
+        zoneTexte.style.display = "block";
+      }
+    }
+
+    function envoyerEmail(adresseEmail) {
+     
+      window.location.href = "mailto:" + adresseEmail;
+    }
+  </script>
+    <!-- Lien vers votre fichier CSS -->
+</head>
+
+<body>
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <button id="openNav" onclick="openNav()">☰ </button>
+    <button id="sideTrigger">☰</button>
+
+    <!-- Menu latéral -->
+    <nav id="mySidenav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation_du_projet.html">Presentation</a></li>
+            <li><a href="Rapport_projet.html">Rapport</a></li>
+            <li><a href="installation.html">Installation</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête du site -->
+    <header>
+        <img class="nou" src="nou.jpg" alt="Image Nou" width="125" height="100">
+        <img class="logo" src="logo1.png" alt="Logo" width="350" height="120">
+    </header>
+
+    <!-- Corps du site -->
+    <main>
+		
+		<!-- les div sont pour donner le flex direction : colonnes ou row et chaque sections sont des "briques" avec image et/ou texte -->
+		
+		<div class = "premiere_ligne">
+			<section class="texte-description">
+        
+				<div class="contenu">
+					<h1 >Bienvenue</h1>
+					<p>
+						Bienvenue dans un monde peuplé de créatures divines menaçant l'équilibre cosmique. Armé de votre flûte, affrontez des entités terrifiantes invoquées des ténèbres pour sauver votre royaume d'une apocalypse imminente. Chargé d'une mission cruciale par le roi, explorez des contrées mystérieuses, découvrez des secrets enfouis, et décidez du destin de votre réalité. Chaque note de votre flûte résonne comme une mélodie enchanteresse ou une arme redoutable dans cette aventure captivante. Plongez au cœur de l'incertitude, défiez des adversaires redoutables, et révélez votre véritable potentiel pour assurer l'avenir de votre royaume. Êtes-vous prêt à embrasser l'inconnu et à prouver votre valeur en tant que protecteur de votre monde?
+					</p>
+				</div>
+				<a href="installation.html" class="jouer"> <div class = "jouer"></div></a>
+				
+			</section>
+			
+		</div>
+			
+		<section class="theme_accueil">
+		
+			<div class="image-container">
+				<a>
+					<img src="fond-texte-abysses.png"	>
+				</a>
+				<a>
+					<img src="fond-texte-dragon.png">
+				</a>
+				<a>
+					<img src="fond-texte-momie.png">
+				</a>
+				<a>
+					<img src="fond-texte-kraken.png">
+				</a>
+			</div>
+			
+		</section>
+		
+  <div class = "NOUVEAUTES" style="margin-top: 0%;">
+  <h1>ET LES NOUVEAUTÉS?</h1>
+  <section id="video-section">
+      <video id="video" autoplay loop muted>
+          <source src="boss.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <div class="superposition-video"></div>
+      <div class="texte-haut-gauche">
+          <h3>CRÉATION DE L'IA DES BOSS</h3>
+          <p style="color: rgb(255, 255, 255);">BOSS KRAKEN EN COURS DE CRÉATION</p>
+      </div>
+      <div class="texte-bas-gauche">
+          <h3>Exemple sur Unity</h3>
+          <p style="color: black; ">Premiere version 18/03/24</p>
+      </div>
+  </section>
+  		
+
+
+
+
+
+
+<section class="contact">
+		
+		
+  <h2>Nous contacter</h2>
+  <a class = "email"> <div class="email" onclick= "afficherTexte()"></div></a>
+    <!-- Zone où le texte sera affiché -->
+<div id="zoneTexte" style="display:none;">
+
+  <p class = "email_texte" onclick="envoyerEmail('jules.charton@epita.fr')">Charton Jules</p>
+
+  <p class = "email_texte" onclick="envoyerEmail('kilyann.cauet@epita.fr')">Cauet Kilyann</p>
+
+  <p class = "email_texte" onclick="envoyerEmail('quentin.bidault@epita.fr')">Bidault Quentin</p>
+
+  <p class = "email_texte" onclick="envoyerEmail('georges.chucri@epita.fr')">Chucri Georges</p>
+
+  <p class = "email_texte" onclick="envoyerEmail('patrick.holtzmann@epita.fr')">Holtzmann Patrick</p>
+
+</div>
+  </section>
+
+		<section class="avancement"> 
+		<h2>Avancement du jeu :</h2>
+		<img src="barre-davancement.png" class = "barre_avancement">
+		<p>
+      18/03/2024 - IA des boss partiellement mis en place.<br><br>
+        23/02/2024 - animations du joueurs et des boss.<br><br>
+        02/02/2024 - programmation des deplacements du joueur.<br><br>
+        15/01/2024 - création des dessins des boss.<br><br>
+		20/12/2023 - création et mise en place du multijoueur.<br><br>
+		12/12/2023 - idées des bosses et leurs environnements.<br><br>
+		20/10/2023 - idée jeu et son histoire.<br><br>
+		</p>
+		
+		</section>
+		
+    </main>
+
+    <!-- Pied de page du site -->
+    <footer>
+        <p>&copy; 2023 Melody - Chronicle of the Knight. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Script JavaScript pour ouvrir et fermer le menu latéral -->
+    <script src="script.js"></script>
+    <script>
+      // Fonction pour vérifier si la section vidéo est visible dans la fenêtre
+      function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+      }
+
+      // Fonction pour vérifier si la section vidéo est visible, puis démarrer la vidéo si c'est le cas
+      function checkVideoVisibility() {
+          var videoSection = document.getElementById('video-section');
+          var video = document.getElementById('video');
+
+          if (isElementInViewport(videoSection)) {
+              // La section vidéo est visible, afficher la vidéo et la démarrer
+              video.style.display = 'block';
+              video.play();
+          }
+      }
+
+      // Détecte lorsque l'utilisateur fait défiler la page et vérifie la visibilité de la section vidéo
+      window.addEventListener('scroll', function() {
+          checkVideoVisibility();
+      });
+
+      // Vérifie la visibilité de la section vidéo lorsque la page est chargée
+      window.addEventListener('load', function() {
+          checkVideoVisibility();
+      });
+  </script>
+
+</body>
+
+</html>

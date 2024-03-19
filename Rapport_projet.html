@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+	<title>RAPPORT PROJET</title>
+</head>
+<body>
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <button id="openNav" onclick="openNav()">☰ </button>
+	<button id="sideTrigger">☰</button>
+
+
+    <!-- Menu latéral -->
+    <nav id="mySidenav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation_du_projet.html">Presentation</a></li>
+            <li><a href="Rapport_projet.html">Rapport</a></li>
+            <li><a href="installation.html">Installation</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête du site -->
+    <header>
+        <img class="nou" src = "nou.jpg" width="125" height="100" >
+        <img class="logo" src="logo1.png" alt="Logo" width="350" height="120">
+    </header>
+
+    <!-- Corps du site -->
+    <main style="position: relative; height: 100vh; display: flex; flex-direction: column; align-items: flex-start; padding: 0 20px;">
+        <div class="telecharge" >
+            <div style="padding-left: 10px;">
+                <p style="color: white; margin: 0;">Soutenance 1</p>
+            </div>
+            <div style="margin-left: auto; margin-right: 10px;">
+                <a href="Soutenance_2.pdf" download="Soutenance_2.pdf" style="text-decoration: none; color: white; padding: 10px 15px; border-radius: 0; border: none; cursor: pointer; font-weight: bold; background-color: #333;">Télécharger le fichier</a>
+            </div>
+        </div>
+        <div class="telecharge" >
+            <div style="padding-left: 10px;">
+                <p style="color: white; margin: 0;">Soutenance 2</p>
+            </div>
+            <div style="margin-left: auto; margin-right: 10px;">
+                <a href="" download="" style="text-decoration: none; color: white; padding: 10px 15px; border-radius: 0; border: none; cursor: pointer; font-weight: bold; background-color: #333;">Télécharger le fichier</a>
+            </div>
+        </div>
+    </main>
+    
+    
+    
+    <!-- Pied de page du site -->
+    <footer>
+        <p>&copy; 2023 Melody - Chronicle of the Knight. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Script JavaScript pour ouvrir et fermer le menu latéral -->
+    <script src="script.js"></script>
+
+</body>
+</html>

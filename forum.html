@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+	<title>FORUM</title>
+</head>
+<body>
+	<form action="save.php" method="post">
+		<input type="text" name="username" placeholder="Your username">
+		<textarea name="text" placeholder="Type your message"></textarea>
+		<button type="submit">Post</button>
+	</form>
+
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <button id="openNav" onclick="openNav()">☰ </button>
+	<button id="sideTrigger">☰</button>
+
+
+    <!-- Menu latéral -->
+    <nav id="mySidenav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation_du_projet.html">Presentation</a></li>
+            <li><a href="Rapport_projet.html">Rapport</a></li>
+            <li><a href="installation.html">Installation</a></li>
+			<li><a href="forum.html">Forum</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête du site -->
+    <header>
+        <img class="nou" src = "nou.jpg" width="125" height="100" >
+        <img class="logo" src="logo1.png" alt="Logo" width="350" height="120">
+    </header>
+
+    <!-- Corps du site -->
+    <main>
+	<h1>EN PREPARATION</h1>
+	 <div id="forum">
+        <div id="messages"></div>
+        <div id="input-section">
+            <input type="text" id="username" placeholder="Your username">
+            <textarea id="message" placeholder="Type your message"></textarea>
+            <button onclick="postMessage()">Post</button>
+        </div>
+    </div>
+    <script src="forum.js"></script>
+    </main>
+
+    <!-- Pied de page du site -->
+    <footer>
+        <p>&copy; 2023 Melody - Chronicle of the Knight. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Script JavaScript pour ouvrir et fermer le menu latéral -->
+    <script src="script.js"></script>
+
+</body>
+</html>
