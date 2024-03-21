@@ -1,1 +1,1 @@
-Official Melody Chrocicle Of The Knight Website
+Official Melody Chrocicle Of The Knight Website.
