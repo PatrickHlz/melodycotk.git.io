@@ -1,25 +1,30 @@
+/* Font Faces */
 @font-face {
     font-family: 'evil';
-    src: url('fonts/evil.otf') format('opentype'); /* Utilise 'truetype' pour le format de fichier TTF */
+    src: url('fonts/evil.otf') format('opentype'); /* Utilise 'opentype' pour le format de fichier OTF */
 }
+
 @font-face {
     font-family: 'mercy';
     src: url('fonts/mercy.ttf') format('truetype'); /* Utilise 'truetype' pour le format de fichier TTF */
 }
+
 @font-face {
     font-family: 'titania';
     src: url('fonts/titania.ttf') format('truetype'); /* Utilise 'truetype' pour le format de fichier TTF */
 }
+
 @font-face {
     font-family: 'protest';
     src: url('fonts/protest.ttf') format('truetype'); /* Utilise 'truetype' pour le format de fichier TTF */
 }
+
 @font-face {
     font-family: 'minecraft';
     src: url('fonts/Minecraft.ttf') format('truetype'); /* Utilise 'truetype' pour le format de fichier TTF */
 }
 
-
+/* Global Styles */
 body {
     font-family: 'hel', sans-serif;
     margin: 0;
@@ -32,8 +37,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
-    background-image: url(fond_site1.png);
-	background-attachment: fixed;
+    background-image: url(img/fond_site.png);
 }
 
 header {
@@ -44,9 +48,10 @@ header {
     z-index: 2;
 }
 
-h1{
-	font-size:22pt;
+h1 {
+    font-size: 22pt;
 }
+
 header h1 {
     margin: 0;
     font-size: 4em;
@@ -55,6 +60,7 @@ header h1 {
     z-index: 1;
 }
 
+/* Navigation Menu */
 #openNav,
 #sideTrigger {
     position: fixed;
@@ -111,13 +117,14 @@ header h1 {
     background-color: #333;
 }
 
+/* Main Content */
 main {
-	margin-top:50px;
+    margin-top: 50px;
     text-align: center;
     padding: 20px;
     z-index: 0;
     width: 100%;
-	font-family: monospace;
+    font-family: monospace;
 }
 
 section {
@@ -128,7 +135,7 @@ h2 {
     color: #f5f5f5;
 }
 
-
+/* Images */
 img {
     position: relative;
     z-index: 1;
@@ -144,7 +151,7 @@ img {
     box-shadow: 5px 5px 10px black;
 }
 
-/* Ajout pour l'effet de survol des images */
+/* Image Hover Effect */
 .image-container {
     display: flex;
     justify-content: space-around;
@@ -172,7 +179,7 @@ img {
     filter: grayscale(80%);
     width: 100%;
 }
-	
+
 .image-top-middle {
     max-width: 100%;
     height: auto;
@@ -189,9 +196,10 @@ img {
 }
 
 .logo {
-	margin-left : 170px;
+    margin-left: 170px;
 }
 
+/* Footer */
 footer {
     background-color: #1a1a1a;
     color: #f5f5f5;
@@ -199,18 +207,10 @@ footer {
     padding: 10px;
     bottom: 0px;
     width: 100%;
-	position:fixed;
+    position: fixed;
 }
 
-/* .theme_accueil { */
-    /* background-image: url(theme_accueil.jpg); */
-    /* background-size: cover; */
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
-    /* padding: 50px; */
-    /* box-shadow: 5px 5px 10px black; */
-/* } */
-
+/* Button Styles */
 .jouer {
     width: 190px;
     height: 50.5px;
@@ -223,54 +223,74 @@ footer {
 .jouer:hover {
     background-image: url('jouer_hover.png');
 }
-.avancement{
-	background-color : #2a2a2a;
-	padding : 20px;
+
+/* Progress Section */
+.avancement {
+    background-color: #2a2a2a;
+    padding: 20px;
 }
+
+/* Conteneur principal pour l'image et le texte */
+.conteneur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cote {
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.cote img {
+    max-width: 100px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto;
+}
+
+/* Description Text */
 .texte-description {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
     font-family: 'Minecraft', sans-serif;
-    font-size: 1vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(theme_presentation.jpg); /* Ajout de linear-gradient pour l'assombrissement */
-    background-size: cover;
+    font-size: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(theme_presentation.jpg);
+    background-size: contain;
     background-position: center;
     padding: 20px;
     text-align: center;
-    width: 700px;
+    width: 590px;
+    height: 360px;
     box-shadow: 5px 5px 10px black;
     line-height: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
-
-
 
 .contenu {
     width: 75%; /* Utilise toute la largeur disponible */
 }
 
-.premiere_ligne{
-	display: flex;
+.premiere_ligne {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact{
-	margin : 0 auto;
-	margin-bottom : 20px;
-	background-color:#5D617E;
-	width : 50%;
-	padding : 20px;
+
+/* Contact Section */
+.contact {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #5D617E;
+    width: 50%;
+    padding: 20px;
     box-shadow: 5px 5px 10px black;
-	
 }
+
 .email {
-	margin: 0 auto;
-	width: 55px;
+    margin: 0 auto;
+    width: 55px;
     height: 51.5px;
     background-size: cover;
     background-image: url('email.png');
@@ -282,34 +302,36 @@ footer {
     background-image: url('email_hover.png');
 }
 
-.email_texte{
-	font-family: monospace;
-	cursor: pointer;
-	transition: color 0.3s;
+.email_texte {
+    font-family: monospace;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-.email_texte:hover{
-	color : #8D92B4;
+.email_texte:hover {
+    color: #8D92B4;
 }
 
-.communaute{
-	background-color: #314C2A;
-	width: 70%;
-	margin: 0 auto;
-	box-shadow: 5px 5px 10px black;
-	padding:20px;
-	margin-bottom: 20px;
-	
+/* Community Section */
+.communaute {
+    background-color: #314C2A;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.communaute_texte{
-	text-decoration: none; 
-	color : white;
-}*.communaute_texte:hover{
-	color : grey;
+.communaute_texte {
+    text-decoration: none;
+    color: white;
 }
 
+.communaute_texte:hover {
+    color: grey;
+}
 
+/* Messages */
 #messages {
     border: 1px solid #ccc;
     padding: 10px;
@@ -318,23 +340,25 @@ footer {
     overflow-y: scroll;
 }
 
+/* Input Section */
 #input-section {
     display: flex;
     flex-direction: column;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     margin-bottom: 10px;
 }
 
+/* Video Section */
 #video {
     display: flex;
     width: 100%; /* Prend toute la largeur */
     height: auto; /* Ajuste la hauteur en fonction de la largeur */
-    
     margin-bottom: 0%;
 }
-
 
 #video-section {
     position: relative; /* Position relative pour positionner les éléments fils absolument */
@@ -346,7 +370,7 @@ input, textarea, button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Couleur noire avec une opacité de 50 % */
+    background-color: rgba(0, 0, 0, 0.2); /* Couleur noire avec une opacité de 20 % */
 }
 
 .texte-haut-gauche {
@@ -370,7 +394,7 @@ input, textarea, button {
     z-index: 1; /* Assure que le texte est au-dessus de la vidéo */
 }
 
-/* Styles pour la section Nouveautés */
+/* New Features Section */
 .NOUVEAUTES {
     margin-top: 50px; /* Marge supérieure pour espacer la section */
     margin-bottom: 0%;
@@ -384,12 +408,11 @@ input, textarea, button {
     background-color: #1b1b1b; /* Couleur de fond pour le titre */
     width: fit-content; /* Ajuste la largeur en fonction du contenu */
     padding-bottom: 1vw;
-    padding-top: 1.6vw;;
+    padding-top: 1.6vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre pour le titre */
     margin: 0 auto 20px; /* Marge auto sur les côtés pour centrer le titre, marge inférieure pour espacer le titre */
     text-align: center; /* Centrer le texte à l'intérieur du titre */
 }
-
 
 .NOUVEAUTES p {
     font-size: 1.2em; /* Taille de police pour le texte */
@@ -397,35 +420,38 @@ input, textarea, button {
     line-height: 1.5; /* Hauteur de ligne pour espacer le texte */
 }
 
-.soutenance{
-    background-color:#555454;
+/* Additional Elements */
+.soutenance {
+    background-color: #555454;
     width: 50%;
     position: absolute;
     text-align: center;
     display: block;
 }
 
-.telecharge{
+.telecharge {
     background-color: #555454;
-    width: calc(100% - 20px); 
-    padding: 10px; 
-    border-radius: 0; 
-    box-shadow: none; 
-    display: flex; 
-    align-items: center; 
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
     width: 30%;
     padding-left: 5%;
 }
 
-.bouton_telecharge{
-    color: white; padding: 10px 15px; 
-    border-radius: 0; 
-    border: none; 
-    cursor: pointer; 
-    font-weight: bold; 
+.bouton_telecharge {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
     background-color: #333;
 }
-.bouton_telecharge:hover{
+
+.bouton_telecharge:hover {
     color: rgb(144, 146, 6);
 }
