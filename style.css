@@ -143,8 +143,8 @@ img {
 }
 
 .theme_accueil {
-    background-image: url(theme_accueil.jpg);
-    background-size: cover;
+    background-image: url(img/theme_accueil.jpg);
+    background-size: contain;
     margin-left: 20px;
     margin-right: 20px;
     padding: 50px;
@@ -215,13 +215,13 @@ footer {
     width: 190px;
     height: 50.5px;
     background-size: cover;
-    background-image: url('jouer.png');
+    background-image: url('img/jouer.png');
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .jouer:hover {
-    background-image: url('jouer_hover.png');
+    background-image: url('img/jouer_hover.png');
 }
 
 /* Progress Section */
@@ -254,7 +254,7 @@ footer {
     margin-bottom: 20px;
     font-family: 'Minecraft', sans-serif;
     font-size: 25px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(theme_presentation.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(img/theme_presentation.jpg);
     background-size: contain;
     background-position: center;
     padding: 20px;
@@ -294,13 +294,13 @@ footer {
     width: 55px;
     height: 51.5px;
     background-size: cover;
-    background-image: url('email.png');
+    background-image: url('img/email.png');
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .email:hover {
-    background-image: url('email_hover.png');
+    background-image: url('img/email_hover.png');
 }
 
 .email_texte {
@@ -313,113 +313,6 @@ footer {
     color: #8D92B4;
 }
 
-/* Community Section */
-.communaute {
-    background-color: #314C2A;
-    width: 70%;
-    margin: 0 auto;
-    box-shadow: 5px 5px 10px black;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.communaute_texte {
-    text-decoration: none;
-    color: white;
-}
-
-.communaute_texte:hover {
-    color: grey;
-}
-
-/* Messages */
-#messages {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    max-height: 300px;
-    overflow-y: scroll;
-}
-
-/* Input Section */
-#input-section {
-    display: flex;
-    flex-direction: column;
-}
-
-input,
-textarea,
-button {
-    margin-bottom: 10px;
-}
-
-/* Video Section */
-#video {
-    display: flex;
-    width: 100%; /* Prend toute la largeur */
-    height: auto; /* Ajuste la hauteur en fonction de la largeur */
-    margin-bottom: 0%;
-}
-
-#video-section {
-    position: relative; /* Position relative pour positionner les éléments fils absolument */
-}
-
-.superposition-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Couleur noire avec une opacité de 20 % */
-}
-
-.texte-haut-gauche {
-    flex: auto;
-    font-family: 'Minecraft', sans-serif;
-    font-size: 2.5vw;
-    position: absolute; /* Position absolue par rapport à la section */
-    top: 20px; /* Ajuste la position verticale */
-    left: 20px; /* Ajuste la position horizontale */
-    color: rgb(255, 255, 255); /* Couleur du texte */
-    z-index: 1; /* Assure que le texte est au-dessus de la vidéo */
-}
-
-.texte-bas-gauche {
-    font-family: 'Minecraft', sans-serif;
-    font-size: 1.6vw;
-    position: absolute; /* Position absolue par rapport à la section */
-    bottom: 20px; /* Ajuste la position verticale */
-    left: 20px; /* Ajuste la position horizontale */
-    color: rgb(0, 0, 0); /* Couleur du texte */
-    z-index: 1; /* Assure que le texte est au-dessus de la vidéo */
-}
-
-/* New Features Section */
-.NOUVEAUTES {
-    margin-top: 50px; /* Marge supérieure pour espacer la section */
-    margin-bottom: 0%;
-    text-align: center; /* Centrer le contenu */
-}
-
-.NOUVEAUTES h1 {
-    font-family: 'Minecraft', sans-serif;
-    font-size: 5vw; /* Taille de police pour le titre */
-    color: #ffffff; /* Couleur du texte */
-    background-color: #1b1b1b; /* Couleur de fond pour le titre */
-    width: fit-content; /* Ajuste la largeur en fonction du contenu */
-    padding-bottom: 1vw;
-    padding-top: 1.6vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre pour le titre */
-    margin: 0 auto 20px; /* Marge auto sur les côtés pour centrer le titre, marge inférieure pour espacer le titre */
-    text-align: center; /* Centrer le texte à l'intérieur du titre */
-}
-
-.NOUVEAUTES p {
-    font-size: 1.2em; /* Taille de police pour le texte */
-    color: #f5f5f5; /* Couleur du texte */
-    line-height: 1.5; /* Hauteur de ligne pour espacer le texte */
-}
 
 /* Additional Elements */
 .soutenance {
@@ -455,4 +348,13 @@ button {
 
 .bouton_telecharge:hover {
     color: rgb(144, 146, 6);
+}
+.rapport{
+    background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond du bloc avec transparence */
+    color: white; /* Couleur du texte */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: left; 
 }
