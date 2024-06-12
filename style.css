@@ -242,8 +242,9 @@ footer {
 }
 
 .cote img {
-    max-width: 100px; /* Ajustez la taille de l'image selon vos besoins */
+    max-width: 300px; /* Ajustez la taille de l'image selon vos besoins */
     height: auto;
+    opacity: 0.6;
 }
 
 /* Description Text */
