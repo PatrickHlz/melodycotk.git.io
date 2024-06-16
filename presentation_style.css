@@ -99,6 +99,7 @@ main {
     z-index: 0;
     width: 100%;
 	font-family: monospace;
+    padding-bottom: 60px;
 }
 
 section {
@@ -113,6 +114,7 @@ footer {
     bottom: -50;;
     width: 100%;
 	position:fixed;
+    position: relative;
 }
 
 .nou {
@@ -164,7 +166,7 @@ p {
 }
 
 .presentation {
-    background-color: #314C2A;
+    background-color: #556661;
     width: 70%;
     margin: 20px auto 0; 
     box-shadow: 5px 5px 10px black;
@@ -182,7 +184,7 @@ a {
 
 a:hover {
     text-decoration: underline; 
-    color: #ffcc00; 
+    color: #ffde20; 
 }
 
 
@@ -197,7 +199,7 @@ a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #C8AE64;
+    background-color: #556661;
     width: 200px;
     height: 200px; 
 }
@@ -205,7 +207,7 @@ a:hover {
     background-color: #9c8953;
 }
 .membre :hover{
-    background-color: #d3b563;
+    background-color: #556661;
 }
 
 .texte-membre {

@@ -125,6 +125,7 @@ main {
     z-index: 0;
     width: 100%;
     font-family: monospace;
+    padding-bottom: 60px;
 }
 
 section {
@@ -207,7 +208,7 @@ footer {
     padding: 10px;
     bottom: 0px;
     width: 100%;
-    position: fixed;
+    position: relative;
 }
 
 /* Button Styles */
@@ -323,38 +324,93 @@ footer {
     display: block;
 }
 
-.telecharge {
-    background-color: #555454;
-    width: calc(100% - 20px);
-    padding: 10px;
-    border-radius: 0;
-    box-shadow: none;
+/* Main Rapport Content */
+.rapport-main {
+    position: relative;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 30%;
-    padding-left: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; /* Espace entre les sections */
 }
 
+/* Section Téléchargement */
+.telecharge {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.telecharge p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Bouton de Téléchargement */
 .bouton_telecharge {
     color: white;
     padding: 10px 15px;
-    border-radius: 0;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     font-weight: bold;
     background-color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
 }
 
 .bouton_telecharge:hover {
-    color: rgb(144, 146, 6);
+    background-color: #555;
+    color: #ffc107;
 }
-.rapport{
+
+/* Rapport Section */
+.rapport {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: left;
+}
+
+
+/* Section Téléchargement */
+.telechargement {
     background-color: rgba(0, 0, 0, 0.8); /* Couleur de fond du bloc avec transparence */
     color: white; /* Couleur du texte */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 600px;
-    text-align: left; 
+    margin: 20px auto;
+    text-align: center;
 }
+
+/* Bouton de Téléchargement */
+.bouton_telecharge {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bouton_telecharge:hover {
+    background-color: #555;
+    color: #ffc107;
+}
+

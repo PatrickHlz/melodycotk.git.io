@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
-	<title>RAPPORT PROJET</title>
+    <link rel="stylesheet" href="style.css">
+    <title>RAPPORT PROJET</title>
 </head>
+
 <body>
 
     <!-- Bouton pour ouvrir le menu latéral -->
     <button id="openNav" onclick="openNav()">☰ </button>
-	<button id="sideTrigger">☰</button>
-
+    <button id="sideTrigger">☰</button>
 
     <!-- Menu latéral -->
     <nav id="mySidenav">
@@ -25,35 +26,33 @@
 
     <!-- En-tête du site -->
     <header>
-        <img class="nou" src = "nou.jpg" width="125" height="100" >
-        <img class="logo" src="logo1.png" alt="Logo" width="350" height="120">
+        <img class="nou" src="img/nou.jpg" alt="Image Nou" width="125" height="100">
+        <img class="logo" src="img/logo.png" alt="Logo" width="250" height="180">
     </header>
 
     <!-- Corps du site -->
-    <main style="position: relative; height: 100vh; display: flex; flex-direction: column; align-items: flex-start; padding: 0 20px;">
-        <div class="telecharge" >
-            <div style="padding-left: 10px;">
-                <p style="color: white; margin: 0;">Soutenance 1</p>
+    <main class="rapport-main">
+        <div class="telecharge">
+            <div>
+                <p>Soutenance 1</p>
             </div>
-            <div style="margin-left: auto; margin-right: 10px;">
-                <a href="content/cahier_des_charges.pdf" download="cahier_des_charges.pdf" style="text-decoration: none; color: white; padding: 10px 15px; border-radius: 0; border: none; cursor: pointer; font-weight: bold; background-color: #333;">Télécharger le fichier</a>
+            <div>
+                <a href="content/cahier_des_charges.pdf" download="cahier_des_charges.pdf" class="bouton_telecharge">Télécharger le fichier</a>
             </div>
         </div>
-        <div class="telecharge" >
-            <div style="padding-left: 10px;">
-                <p style="color: white; margin: 0;">Soutenance 2</p>
+        <div class="telecharge">
+            <div>
+                <p>Soutenance 2</p>
             </div>
-            <div style="margin-left: auto; margin-right: 10px;">
-                <a href="content/Soutenance_2.pdf" download="Soutenance_2.pdf" style="text-decoration: none; color: white; padding: 10px 15px; border-radius: 0; border: none; cursor: pointer; font-weight: bold; background-color: #333;">Télécharger le fichier</a>
+            <div>
+                <a href="content/Soutenance_2.pdf" download="Soutenance_2.pdf" class="bouton_telecharge">Télécharger le fichier</a>
             </div>
         </div>
         <div class="rapport">
             <p>Vous pouvez télécharger les deux rapports du projet de la première et de la deuxième soutenance.</p>
         </div>
     </main>
-    
-    
-    
+
     <!-- Pied de page du site -->
     <footer>
         <p>&copy; 2023 Melody - Chronicle of the Knight. Tous droits réservés.</p>
@@ -63,4 +62,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
