@@ -6,10 +6,12 @@ site : https://patrickhlz.github.io/melodycotk.git.io/
 
 ## Little overview
 
-*multiplayer*
+Multiplayer is available !
 ![multiplayer](game_example.png)
+*multiplayer*
 
-*one of the boss*
+Ennemies to fight! 
 ![multiplayer](boss_example.png)
+*one of the boss*
 
 
