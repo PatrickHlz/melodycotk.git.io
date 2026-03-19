@@ -6,9 +6,10 @@ site : https://patrickhlz.github.io/melodycotk.git.io/
 
 ## Little overview
 
-![multiplayer](game_example.png)
 *multiplayer*
+![multiplayer](game_example.png)
 
-![multiplayer](boss_example.png)
 *one of the boss*
+![multiplayer](boss_example.png)
+
 
